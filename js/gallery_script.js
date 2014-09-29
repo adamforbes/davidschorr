@@ -29,6 +29,6 @@ $(document).ready(function() {
   function image(title, bodyOfWork, caption, date) {
     this.title = title;
     this.bodyOfWork = bodyOfWork;
-    this.caption = 
+    this.caption = ;
   }
 });
