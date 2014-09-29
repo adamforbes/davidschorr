@@ -1,0 +1,32 @@
+ADAM FORBES
+STYLE GUIDE FOR HTML/CSS/JS
+
+HTML
+All elements with siblings that aren't leaves get a line break between them
+Example:
+<div>
+
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div>
+    <div>
+    </div>
+  </div>
+
+  <div>
+    
+    <div>
+      <div>
+      </div>
+    </div>
+    
+    <div>
+    </div>
+
+  <div>
+
+</div>

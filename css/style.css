@@ -1,0 +1,276 @@
+/* Importing some favorite fonts. Make sure to delete extra fonts
+that you're not using */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif);
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      Box model
+
+apply a natural box layout model to all elements, 
+but allowing components to change
+
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* apply a natural box layout model to all elements, 
+but allowing components to change */
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      CSS RESET
+       http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       CLEAR FIX
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          Type
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+h1 {
+  font-family: 'PT Serif', serif;
+  /* This value is overridden by skrollr in index */
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: .7rem;
+  line-height: 5rem;
+} 
+
+h2 {
+  font-family: 'Lato', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: .1rem;
+  line-height: 5rem;
+} 
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          a
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          Main 
+
+  css styles for the unique elements of the main page. 
+  following the structure of the html
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#bg-cover {
+  background-color: #00103D;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#main-page {
+  margin-top: 100%;
+}
+
+#main-title {
+  color: rgb(228, 149, 55);
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 7px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#dummy-div {
+  /* setCSS() */
+  height: 0px;
+}
+
+#drop-shadow-div {
+  background-color: white; /* option2: #A6A6AC */
+  box-shadow: 0px -3px 10px rgb(130, 130, 130);
+  position: fixed;
+  top: 0; /* setCSS() */
+  width: 100%;
+  z-index: 1;
+}
+
+/* TODO: Get rid of these by implementing Skrollr stylesheets
+ * 
+ * These are duplicate styles to make up for the deletion of the 
+ * skrollr animation. */
+ 
+#main-title-gallery {
+  color: rgb(228, 149, 55);
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 7px;
+  position:fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#h1-gallery {
+  color:rgb(228,149,55);
+  font-size:2rem;
+}
+
+#drop-shadow-div-gallery {
+  background-color: white; /* option2: #A6A6AC */
+  box-shadow: 0px -3px 10px rgb(130, 130, 130);
+  opacity: 1;
+  position: fixed;
+  top: 0; /* setCSS() */
+  width: 100%;
+  z-index: 1;
+}
+
+#dummy-div-gallery {
+  display:block;
+  /* setCSS() */
+  height: 0px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  Content-container
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#content-container {
+  background-color: white;
+  margin-top: 40px;
+}
+
+#dummy-div2 {
+  height: 400px;
+  width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       Sections
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#content-container section {
+  cursor: pointer;
+  height: 200px;
+  text-align: center;
+}
+
+#content-container section:hover {
+  background-color: #EEEEEE;
+}
+
+#content-container section h2{
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+#content-container section img {
+  width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  Gallery-container
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#gallery-container {
+  margin: 40px auto;
+  width: 500px;
+  background-color: pink;
+}
+
+#gallery-container ul li {
+  padding-top: 200px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       Hamburger
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#hamburger {
+  width: 20px;
+  height: 20px;
+  top: 30px;
+  position: fixed;
+}
+
+#hamburger hr {
+  color: pink;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Background
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+html { 
+/*This is the old style. Feel free to delete later.*/
+  background: url("../img/bg/bg_0.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

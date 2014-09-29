@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1">
+	<title>David Schorr</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- This is a background cover that darkens as the main
+       page scrolls up -->
+
+  <!-- This is my first example of the data-0- attribute
+         these are used in conjuction with js/skrollr. This is
+         a plugin used to control scrolling -->
+
+  <div id="bg-cover"
+       data-anchor-target="#main-title"
+       data-start="opacity:0;"
+       data-center="opacity:.8;">
+  </div>
+
+  <!-- This page scrolls up to cover the background-->
+  <div id="main-page">
+
+    <header>
+
+<!--  <div id="hamburger">
+        <hr/>
+        <hr/>
+        <hr/>
+      </div> -->
+
+      <div id="main-title" 
+           data-start="position:static;" 
+           data-top="position:fixed;">
+
+        <a href="index.html">  
+          <h1 data-10p-top="color:rgb(255,255,255);font-size:2.3rem;"
+              data-top="color:rgb(255,255,255);font-size:2rem;"
+              data--20p-top="color:rgb(255,255,255);font-size:2rem;"
+              data--70p-top="color:rgb(228,149,55);font-size:2rem;">
+            DAVID SCHORR
+          </h1> 
+        </a>
+
+      </div>
+
+      <!-- The following div exists to add a drop shadow beneath
+           the header -->
+
+      <div id="drop-shadow-div"
+           data-anchor-target="#content-container"
+           data-top="opacity:0;"
+           data--20-top="opacity:1;">
+      </div>
+
+    </header>
+
+    <!-- As per the skrollr documentation, wrapping static elements
+         in this div allows the site to work on mobile -->
+    <div id="skrollr-body">
+
+      <div id="dummy-div"
+           data-anchor-target="#main-title"
+           data-start="display:none;"
+           data-top="display:block;">
+      </div>
+
+      <!-- Here begins the list of works -->
+      <!-- The animation here is to make up for the lost space
+           when the title shrinks-->
+      <div id="content-container"
+            data-anchor-target="#main-title"
+            data-10p-top="margin-top:40px;"
+            data-top="margin-top:20px;">
+
+        <!-- This div exists to be a spacer. I chose not to
+             CSS to do this, because background wouldn't play
+             nicely -->
+
+
+        <section id="apothecary" href="site/gallery.html">
+          <a href="site/gallery.html">
+            <h2>Apothecary</h2>
+          </a>
+        </section>
+
+        <section id="goods">
+          <h2>GOODS</h2>
+        </section>
+
+        <section id="the-imaginary-life-of-ordinary-things">
+          <h2>The Imaginary Life of Ordinary Things</h2>
+        </section>
+
+        <section id="the-imaginary-life-of-ordinary-things">
+          <h2>Khadi</h2>
+        </section>
+
+        <section id="the-imaginary-life-of-ordinary-things">
+          <h2>Fables of La Fontaine and other Illustrations</h2>
+        </section>
+
+        <section id="the-imaginary-life-of-ordinary-things">
+          <h2>les Fleurs de mal</h2>
+        </section>
+
+        <section id="the-imaginary-life-of-ordinary-things">
+          <h2>Songs with a dying fall</h2>
+        </section>
+
+        <section id="the-imaginary-life-of-ordinary-things">
+          <h2>et. al. mostly before 1980</h2>
+        </section>
+
+        <section id="the-imaginary-life-of-ordinary-things">
+          <h2>Roman Prints and Drawings</h2>
+        </section>
+
+        <section id="the-imaginary-life-of-ordinary-things">
+          <h2>Saints</h2>
+        </section>
+
+        <section id="the-imaginary-life-of-ordinary-things">
+          <h2>Portraits</h2>
+        </section>
+        
+      </div>
+    </div>  
+  </div>
+
+  <!-- Loading the code -->
+  <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+  <!-- This is the skrollr plugin that enables me to 
+       do fun things while scrolling on the site 
+       documentation: https://github.com/Prinzhorn/skrollr -->
+  <script type="text/javascript" src="js/skrollr.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+
+<!-- PROJECT ROADMAP
+
+V1
+- gallery
+- main page
+- autobiography
+- 
+
+V2
+- parallax
+- cycle through different images for the background
+- cycle through different text colors
+- Mobile
+
+
+ -->
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1">
+  <title>gallery</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+
+    <div id="main-title-gallery">
+
+      <a href="../index.html">  
+        <h1 id="h1-gallery">
+          DAVID SCHORR
+        </h1>
+      </a>
+
+    </div>
+
+    <!-- The following div exists to add a drop shadow beneath
+         the header -->
+
+    <div id="drop-shadow-div-gallery"></div>
+
+  </header>
+
+  <!-- As per the skrollr documentation, wrapping static elements
+       in this div allows the site to work on mobile -->
+  <div id="skrollr-body">
+
+    <div id="dummy-div-gallery"></div>
+
+    <!-- Here begins the list of works -->
+    <!-- The animation here is to make up for the lost space
+         when the title shrinks-->
+    <div id="gallery-container"
+          data-anchor-target="#main-title-gallery"
+          data-10p-top="margin-top:40px;"
+          data-top="margin-top:20px;">
+
+      <ul>
+        <li>
+          <figure>
+            
+          </figure>
+        </li>
+        <li>Hello
+        </li>
+        <li>Hello
+        </li>
+        <li>Hello
+        </li>
+        <li>Hello
+        </li>
+        <li>Hello
+        </li>
+      </ul>
+    </div>
+
+  </div>  
+
+  <!-- Loading the code -->
+  <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+  <!-- This is the skrollr plugin that enables me to 
+       do fun things while scrolling on the site 
+       documentation: https://github.com/Prinzhorn/skrollr -->
+  <script type="text/javascript" src="../js/skrollr.min.js"></script>
+  <script src="../js/gallery_script.js"></script>
+
+</body>
+</html>
+
+<!-- PROJECT ROADMAP
+
+V1
+- gallery
+- main page
+- autobiography
+- 
+
+V2
+- parallax
+- cycle through different images for the background
+- cycle through different text colors
+- Mobile
+
+
+ -->
+
+
+
+
+
+
