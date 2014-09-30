@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  var $html = $('html');
+
   /* Initialize the skrollr plugin*/
   skrollr.init({
     forceHeight: false
@@ -30,6 +32,6 @@ $(document).ready(function() {
 
     imgPath = imgPath.replace("bg_0.jpg", "bg_" + rand + ".jpg");
 
-    $('html').css('background-image', imgPath);
+    $html.css('background-image', imgPath);
   }
 });

@@ -4,6 +4,7 @@ that you're not using */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic,400italic);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300);
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                       Box model
@@ -83,6 +84,14 @@ table {
     clear: both;
 }
 
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                           Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -100,8 +109,15 @@ h2 {
   font-family: 'Lato', serif;
   font-size: 2rem;
   font-weight: 300;
-  letter-spacing: .1rem;
   line-height: 5rem;
+} 
+
+h3 {
+  font-family: 'Lato', serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: .1rem;
+  line-height: 2rem;
 } 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -144,6 +160,11 @@ a {
   z-index: 2;
 }
 
+#static-header {
+  margin: 15px auto;
+  width: 90%;
+}
+
 #dummy-div {
   /* setCSS() */
   height: 0px;
@@ -176,13 +197,14 @@ a {
 }
 
 #h1-gallery {
-  color:rgb(228,149,55);
-  font-size:2rem;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Roboto Slab', serif;
 }
 
 #drop-shadow-div-gallery {
-  background-color: white; /* option2: #A6A6AC */
-  box-shadow: 0px -3px 10px rgb(130, 130, 130);
+  background-color: #A6A6AC; /* option2: #A6A6AC */
+  box-shadow: 0px 0px 10px rgb(20, 20, 20);
   opacity: 1;
   position: fixed;
   top: 0; /* setCSS() */
@@ -229,22 +251,33 @@ a {
   padding-top: 60px;
 }
 
-#content-container section img {
-  width: 100%;
-}
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                   Gallery-container
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 #gallery-container {
-  margin: 40px auto;
-  width: 500px;
-  background-color: pink;
+  margin: 0px auto;
+  width: 800px;
 }
 
 #gallery-container ul li {
-  padding-top: 200px;
+  margin-top: 20px;
+}
+
+#gallery-container ul li figure img {
+  width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Figure
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+figure {
+
+}
+
+figcaption {
+
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
