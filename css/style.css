@@ -92,6 +92,11 @@ table {
   float: left;
 }
 
+.center {
+  /* not quite related to clear fix.. but good enough */
+  margin: 0 auto;
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                           Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -107,7 +112,7 @@ h1 {
 
 h2 {
   font-family: 'Lato', serif;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 5rem;
 } 
@@ -119,6 +124,10 @@ h3 {
   letter-spacing: .1rem;
   line-height: 2rem;
 } 
+
+h4 {
+  
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                           a
@@ -146,7 +155,7 @@ a {
 }
 
 #main-page {
-  margin-top: 100%;
+  margin-top: 500px;
 }
 
 #main-title {
@@ -160,9 +169,16 @@ a {
   z-index: 2;
 }
 
-#static-header {
-  margin: 15px auto;
-  width: 90%;
+#left-nav{
+  margin-left: 30px;
+}
+
+#right-nav {
+  margin-right: 30px;
+}
+
+#center-nav {
+  margin: 0 auto;
 }
 
 #dummy-div {
@@ -223,42 +239,50 @@ a {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 #content-container {
-  background-color: white;
-  margin-top: 40px;
+  background-color: #DDDDDD;
 }
 
-#dummy-div2 {
-  height: 400px;
-  width: 100%;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                       Sections
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-#content-container section {
-  cursor: pointer;
-  height: 200px;
+#body-of-works { 
   text-align: center;
 }
 
-#content-container section:hover {
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Card-container
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.card-container {
+  margin: 0px auto;
+  width: 700px;
+}
+
+/* for index.html */
+
+#menu-container div:first-child {
+  cursor: pointer;
+  float: left;
+  margin: 10px;
+  text-align: center;
+  width: calc(100% - 20px);
+}
+
+#menu-container div:not(:first-child) {
+  background-color: white;
+  cursor: pointer;
+  float: left;
+  margin: 10px;
+  text-align: center;
+  width: 330px;
+}
+
+#menu-container div img {
+  width: 100%;
+}
+
+#menu-container div:hover {
   background-color: #EEEEEE;
 }
 
-#content-container section h2{
-  padding-bottom: 60px;
-  padding-top: 60px;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                  Gallery-container
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-#gallery-container {
-  margin: 0px auto;
-  width: 800px;
-}
+/* for gallery.html */
 
 #gallery-container ul li {
   margin-top: 20px;

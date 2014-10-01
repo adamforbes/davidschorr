@@ -27,7 +27,7 @@ $(document).ready(function() {
      * I'm not able to look at local files. Ideally this would
      * check the folder and see how many files there are instead
      * of hardcoding it... whatever. */
-    var numFiles = 6;
+    var numFiles = 5;
     var rand = Math.floor((Math.random() * numFiles));
 
     imgPath = imgPath.replace("bg_0.jpg", "bg_" + rand + ".jpg");
