@@ -240,6 +240,7 @@ a {
 
 #content-container {
   background-color: #DDDDDD;
+  box-shadow: 0px 5px 20px #333333;
 }
 
 #body-of-works { 
@@ -257,20 +258,20 @@ a {
 
 /* for index.html */
 
-#menu-container div:first-child {
+#menu-container div {
   cursor: pointer;
   float: left;
   margin: 10px;
   text-align: center;
+}
+  
+#menu-container div:first-child {
   width: calc(100% - 20px);
 }
 
 #menu-container div:not(:first-child) {
   background-color: white;
-  cursor: pointer;
-  float: left;
-  margin: 10px;
-  text-align: center;
+  box-shadow: 2px 2px 4px #BBBBBB;
   width: 330px;
 }
 
