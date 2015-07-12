@@ -14,7 +14,7 @@
     <div id="main-title-gallery">
       <a href="../index.html">  
         <h1 id="h1-gallery">
-          APOTHECARY ?
+          APOTHECARY
         </h1>
       </a>
     </div>
@@ -41,6 +41,12 @@
         <li>
           <figure>
             <img src="../img/apothecary/W_Adversity.jpg" alt="The Pulpit Rock">
+            <figcaption><h3>Adversity</h3></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="../img/apothecary-700/Adversity.jpg" alt="The Pulpit Rock">
             <figcaption><h3>Adversity</h3></figcaption>
           </figure>
         </li>
@@ -113,6 +119,20 @@
 
 <!-- PROJECT ROADMAP
 
+After spending 5~ hours on the project 7/12/2015
+- The majority of the work will be in fixing up the images
+- Initially, this source set was a boon, but upon revisiting it
+- it's a complete nightmare. All the images are of different sizes and
+- quality. Converting them is a nightmare that will inevitably lose quality.
+- Naming schemes are inconsistent. They are in no order. The item 
+- information is not consistent. No wonder so few works were listed on the 
+- current websites. 
+
+- I would like to spend my time working on code, not formatting and handling
+- images. Consider this project paused for the time being. 
+
+- Alternatives: can only post a subset of the total number of images. 
+
 V1
 - gallery
 - main page
@@ -125,7 +145,10 @@ V2
 - cycle through different text colors
 - Mobile
 
-
+Reference:
+Simple unix for loop to rename all files in a directory 
+for f in *.jpg; do mv "$f" "${f#W_}"; done
+Resize photos - http://bulkresizephotos.com/
  -->
 
 

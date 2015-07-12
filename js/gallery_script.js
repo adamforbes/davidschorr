@@ -38,6 +38,9 @@ $(document).ready(function() {
    * title: the title of the work
    * bodyOfWork: the body of work the artwork belongs to
    * caption: a caption that 
+   *
+   * TODO
+   * Switch over to angular because this is ugly and not OOO
    */
   function artwork(fileName, title, bodyOfWork, material, dateCreated) {
     this.fileName = fileName;

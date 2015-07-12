@@ -256,31 +256,9 @@ a {
   width: 700px;
 }
 
-/* for index.html */
-
-#menu-container div {
-  cursor: pointer;
-  float: left;
-  margin: 10px;
-  text-align: center;
-}
-  
-#menu-container div:first-child {
+#bodies-of-works {
   width: calc(100% - 20px);
-}
-
-#menu-container div:not(:first-child) {
-  background-color: white;
-  box-shadow: 2px 2px 6px #BBBBBB;
-  width: 330px;
-}
-
-#menu-container div img {
-  width: 100%;
-}
-
-#menu-container div:hover {
-  background-color: #EEEEEE;
+  text-align: center;
 }
 
 /* for gallery.html */
@@ -290,6 +268,28 @@ a {
 }
 
 #gallery-container ul li figure img {
+  width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Body of Work Cards 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.body-card {
+  cursor: pointer;
+  float: left;
+  margin: 10px;
+  text-align: center;  
+  background-color: white;
+  box-shadow: 2px 2px 6px #BBBBBB;
+  width: 330px;
+}
+
+.body-card:hover {
+  background-color: #EEEEEE;
+}
+
+.body-card img {
   width: 100%;
 }
 
